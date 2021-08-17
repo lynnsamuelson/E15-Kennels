@@ -42,7 +42,9 @@ export const ApplicationViews = () => {
               {/*(\d+) is regex to match only a digit.  The `:animalId` must be an integer.*/}
                   <AnimalDetail />
               </Route>
-             
+              <Route path="/animals/edit/:animalId(\d+)">
+                  <AnimalForm />
+              </Route>
             </CustomerProvider>
             </LocationProvider>
             </AnimalProvider>
